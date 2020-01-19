@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "554659988341",
+    "firebase_url": "https://myrecipes-1576552399759.firebaseio.com",
+    "project_id": "myrecipes-1576552399759",
+    "storage_bucket": "myrecipes-1576552399759.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554659988341:android:73a3627b01d964039a493c",
+        "android_client_info": {
+          "package_name": "com.example.morecipes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554659988341-p1keo89the6n6rnltp1hngvn7hrrn3gk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.morecipes",
+            "certificate_hash": "4e4c74b9fd7b2efbfca53ce740c74346bca81184"
+          }
+        },
+        {
+          "client_id": "554659988341-6kq44lbd9ta2teafk10am0dv9eej75kf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbtfZYUOn57ac3ptMuiTdv4kWzmOtAIrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554659988341-6kq44lbd9ta2teafk10am0dv9eej75kf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
