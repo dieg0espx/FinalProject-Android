@@ -1,22 +1,18 @@
-package com.example.morecipes;
+package com.example.morecipes.morecipes.Online;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.morecipes.R;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class ArticulosAdapter  extends FirestoreRecyclerAdapter<Articulo, ArticulosAdapter.ViewHolder> {
+public class ArticulosAdapter extends FirestoreRecyclerAdapter<Articulo, ArticulosAdapter.ViewHolder> {
 
     /**
      * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link
@@ -29,11 +25,11 @@ public class ArticulosAdapter  extends FirestoreRecyclerAdapter<Articulo, Articu
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull Articulo articulo) {
+    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull Articulo onlineArticulo) {
         System.out.println(position);
-        holder.textViewDishname.setText(articulo.getDishname());
-        holder.textViewIngredients.setText(articulo.getIngredients());
-        holder.textViewSteps.setText(String.valueOf(articulo.getSteps()));
+        holder.textViewDishname.setText(onlineArticulo.getDishname());
+        holder.textViewIngredients.setText(onlineArticulo.getIngredients());
+        holder.textViewSteps.setText(String.valueOf(onlineArticulo.getSteps()));
     }
 
     @Override

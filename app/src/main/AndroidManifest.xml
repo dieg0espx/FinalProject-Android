@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".MostrarDatosActivity">
+        <activity android:name=".morecipes.Local.DeleteDataActivity"></activity>
+        <activity android:name=".morecipes.Local.UpdateDataActivity" />
+        <activity android:name=".morecipes.Local.ReadDataActivity"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".morecipes.Local.AddDataActivity" />
+        <activity android:name=".morecipes.Online.MainActivity" />
+        <activity
+            android:name=".morecipes.Online.MostrarDatosActivity"
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

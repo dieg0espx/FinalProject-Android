@@ -1,4 +1,4 @@
-package com.example.morecipes;
+package com.example.morecipes.morecipes.Online;
 
 
 import android.content.Intent;
@@ -11,12 +11,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.morecipes.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -84,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        Intent intent = new Intent(MainActivity.this,MostrarDatosActivity.class);
+        startActivity(intent);
 
     }
 }

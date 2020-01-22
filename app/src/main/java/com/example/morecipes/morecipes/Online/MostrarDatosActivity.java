@@ -1,32 +1,21 @@
-package com.example.morecipes;
+package com.example.morecipes.morecipes.Online;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.SearchView;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.example.morecipes.R;
+import com.example.morecipes.morecipes.Local.ReadDataActivity;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 public class MostrarDatosActivity extends AppCompatActivity {
     RecyclerView recyclerViewArticulos;
@@ -84,7 +73,7 @@ public class MostrarDatosActivity extends AppCompatActivity {
     }
 
     public void btn_go2local(View view) {
-        Intent intent = new Intent (MostrarDatosActivity.this, MainActivity.class );
+        Intent intent = new Intent (MostrarDatosActivity.this, ReadDataActivity.class );
         startActivity(intent);
     }
 }

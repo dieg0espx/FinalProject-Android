@@ -1,4 +1,4 @@
-package com.example.morecipes;
+package com.example.morecipes.morecipes.Online;
 
 public class Articulo {
 
