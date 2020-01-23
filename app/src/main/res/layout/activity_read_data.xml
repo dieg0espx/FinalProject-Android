@@ -5,8 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_plain"
-    tools:context=".ReadDataActivity">
+    tools:context=".morecipes.Local.ReadDataActivity">
 
+
+    <Button
+        android:id="@+id/btn_go2local8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_cloud_blanco"
+        android:elevation="20dp"
+        android:onClick="btn_go2Online"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewArticulos"
+        app:layout_constraintEnd_toStartOf="@+id/btn_go2local"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_go2local"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_local_recipes"
+        android:elevation="20dp"
+        android:onClick="btn_go2Local"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewArticulos"
+        app:layout_constraintEnd_toStartOf="@+id/btn_go2local9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_go2local9"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ic_shopping_cart_white"
+        android:elevation="20dp"
+        android:onClick="btn_go2list"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewArticulos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mSearchField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rec"
@@ -30,7 +81,6 @@
         android:id="@+id/mSearchBtn"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/ic_lupa_blanco"
@@ -40,24 +90,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/mSearchField3"
         app:layout_constraintTop_toTopOf="@+id/mSearchField3"
-        app:layout_constraintVertical_bias="0.885" />
-
-    <Button
-        android:id="@+id/btn_go2Online"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/ic_cloud_blanco"
-        android:elevation="20dp"
-        android:onClick="btn_go2Online"
-        app:layout_constraintBottom_toBottomOf="@+id/mSearchBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/mSearchBtn"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/mSearchField3"
@@ -70,14 +103,14 @@
         android:background="@drawable/bg_finddishname"
         android:ems="10"
         android:hint="Enter the Dishname"
-        android:inputType="textPersonName"
         android:paddingLeft="20dp"
         app:layout_constraintBottom_toTopOf="@+id/rec"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.9"
+        android:inputType="textCapCharacters"/>
 
     <TextView
         android:id="@+id/textView3"

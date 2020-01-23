@@ -14,6 +14,7 @@ import android.widget.EditText;
 
 import com.example.morecipes.R;
 import com.example.morecipes.morecipes.Online.MostrarDatosActivity;
+import com.example.morecipes.morecipes.ShoppingList;
 
 import java.util.List;
 
@@ -69,19 +70,27 @@ public class ReadDataActivity extends AppCompatActivity {
         getData();
     }
 
+    public void btn_add(View view) {
+        Intent intent = new Intent( ReadDataActivity.this, AddDataActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
+    }
 
     public void btn_go2Online(View view) {
         Intent intent = new Intent( ReadDataActivity.this, MostrarDatosActivity.class);
         startActivity(intent);
-
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
     }
 
-    public void btn_add(View view) {
-        Intent intent = new Intent( ReadDataActivity.this, AddDataActivity.class);
+    public void btn_go2Local(View view) {
+        Intent intent = new Intent( ReadDataActivity.this, ReadDataActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
     }
 
-
-
-
+    public void btn_go2list(View view) {
+        Intent intent = new Intent (ReadDataActivity.this, ShoppingList.class );
+        startActivity(intent);
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
+    }
 }

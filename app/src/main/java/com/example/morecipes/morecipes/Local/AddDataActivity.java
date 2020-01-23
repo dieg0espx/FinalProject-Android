@@ -44,7 +44,7 @@ public class AddDataActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Data Save",Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(AddDataActivity.this, ReadDataActivity.class);
                 startActivity(intent);
-
+                overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
             }
         });
 
@@ -54,6 +54,7 @@ public class AddDataActivity extends AppCompatActivity {
     public void go2List(View view) {
         Intent intent = new Intent(AddDataActivity.this, ReadDataActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
     }
 }
 

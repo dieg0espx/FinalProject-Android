@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, MostrarDatosActivity.class));
+                overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
             }
         });
 
@@ -87,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(MainActivity.this,MostrarDatosActivity.class);
         startActivity(intent);
-
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
     }
+
+
 }

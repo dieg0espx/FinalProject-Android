@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_plain"
-    tools:context=".AddDataActivity">
+    tools:context=".morecipes.Local.AddDataActivity">
 
     <Button
         android:id="@+id/btnMostrarDatos"
@@ -48,7 +48,7 @@
             android:ems="10"
             android:paddingLeft="20dp"
             android:hint="Dishname"
-            android:inputType="text" />
+            android:inputType="textCapCharacters" />
 
         <EditText
             android:id="@+id/editemail"
@@ -63,7 +63,7 @@
             android:ems="10"
             android:paddingLeft="20dp"
             android:hint="Ingredients"
-            android:inputType="textMultiLine" />
+            android:inputType="textCapSentences|textMultiLine" />
 
         <EditText
             android:id="@+id/editcity"
@@ -78,20 +78,21 @@
             android:ems="10"
             android:paddingLeft="20dp"
             android:hint="Steps"
-            android:inputType="textMultiLine" />
+            android:inputType="textCapSentences|textMultiLine" />
 
         <Button
             android:id="@+id/btn_add"
-            android:layout_width="wrap_content"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="5dp"
             android:layout_marginRight="5dp"
+            android:background="@drawable/bg_floatinbutton"
+            android:fontFamily="sans-serif-light"
             android:text="SUBMIT"
-            android:textColor="#FCF74F00"
+            android:textColor="#FFFF"
             android:textSize="15sp" />
     </LinearLayout>
 

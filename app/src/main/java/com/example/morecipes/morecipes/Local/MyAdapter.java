@@ -29,7 +29,6 @@ public class MyAdapter  extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         MyDatalist md = myDataLists.get(i);
-
         //  viewHolder.txtid.setText(md.getId());
         viewHolder.txtname.setText(md.getName());
         viewHolder.txtemail.setText(md.getEmail());

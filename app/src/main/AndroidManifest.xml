@@ -4,25 +4,47 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/icon_srecipes"
+        android:label="SRecipes"
+        android:roundIcon="@mipmap/icon_srecipess"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".morecipes.Local.DeleteDataActivity"></activity>
-        <activity android:name=".morecipes.Local.UpdateDataActivity" />
-        <activity android:name=".morecipes.Local.ReadDataActivity"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".morecipes.Local.AddDataActivity" />
-        <activity android:name=".morecipes.Online.MainActivity" />
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        >
+        <activity android:name=".morecipes.ShoppingList"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".morecipes.Local.DeleteDataActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".morecipes.Local.UpdateDataActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".morecipes.Local.ReadDataActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".morecipes.Local.AddDataActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".morecipes.Online.MainActivity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".morecipes.Online.MostrarDatosActivity"
-            android:windowSoftInputMode="adjustNothing">
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".morecipes.SplashScreen"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
 
         <meta-data

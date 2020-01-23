@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 import com.example.morecipes.R;
 import com.example.morecipes.morecipes.Local.ReadDataActivity;
+import com.example.morecipes.morecipes.ShoppingList;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -70,10 +71,24 @@ public class MostrarDatosActivity extends AppCompatActivity {
     public void btn_add(View view) {
         Intent intent = new Intent (MostrarDatosActivity.this, MainActivity.class );
         startActivity(intent);
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
     }
 
     public void btn_go2local(View view) {
         Intent intent = new Intent (MostrarDatosActivity.this, ReadDataActivity.class );
         startActivity(intent);
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
+    }
+
+    public void btn_go2Online(View view) {
+        Intent intent = new Intent (MostrarDatosActivity.this, MostrarDatosActivity.class );
+        startActivity(intent);
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
+    }
+
+    public void btn_go2list(View view) {
+        Intent intent = new Intent (MostrarDatosActivity.this, ShoppingList.class );
+        startActivity(intent);
+        overridePendingTransition(R.anim.fast_animation, R.anim.fast_animation);
     }
 }
